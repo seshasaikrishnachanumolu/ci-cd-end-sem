@@ -43,5 +43,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install -g gh-pages
-          # Deploy the build folder (for React)
           gh-pages -d build -r https://x-access-token:${GITHUB_TOKEN}@github.com/seshasaikrishnachanumolu/in_sem_ci-cd-frontend.git
