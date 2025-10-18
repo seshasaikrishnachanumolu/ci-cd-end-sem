@@ -31,13 +31,11 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      # Configure Git identity
       - name: Configure Git
         run: |
           git config --global user.name "seshasaikrishnachanumolu"
           git config --global user.email "seshasaikrishnachanumolu@gmail.com"
 
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
